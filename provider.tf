@@ -1,4 +1,14 @@
+terraform {
+  required_providers {
+     jenkins = {
+       source = "registry.terraform.io/taiidani/jenkins"
+     }
+  }
+}
+
+
 provider "jenkins" {
+
   server_url = "http://172.31.3.199:8080" 
   username   = data.aws_ssm_parameter.jenkins_user.value           
   password   = data.aws_ssm_parameter.jenkins_pass.value          
