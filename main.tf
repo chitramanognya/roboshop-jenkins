@@ -25,4 +25,3 @@ variable "ignore_changes_list" {
   type = list(string)
   default = ["template"]
   }
-}
