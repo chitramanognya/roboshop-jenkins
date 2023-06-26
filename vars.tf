@@ -17,3 +17,7 @@ variable "folders"{
        ]
  }
  
+ variable "force" {
+    default = false
+ }
+ 
